@@ -16,7 +16,7 @@ const AboutMyself = () => {
         <span className="text-green-400 ">solving</span> real problems.
         Currently exploring <span className="text-green-400 ">AI</span>,
         leveling up daily — one commit at a time. I believe good code is like
-        good design: invisible when it works. Whether it's front-end finesse or
+        good design: invisible when it works. Whether its front-end finesse or
         backend logic,{" "}
         <span className="text-green-400 ">
           I enjoy both sides of the stack.
