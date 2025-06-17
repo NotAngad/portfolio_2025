@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://devangad.me
+
+# Sitemaps
+Sitemap: https://devangad.me/sitemap.xml
