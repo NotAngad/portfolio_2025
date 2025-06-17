@@ -11,7 +11,7 @@ import AboutMyself from "@/components/AboutMyself/AboutMyself";
 
 export default function Home() {
   return (
-    <div className="pt-12 pb-12 bg-[#000814] font-mono">
+    <div className="pt-4 pb-4 md:pt-12 md:pb-12 bg-[#000814] font-mono">
       <div className="container mx-auto">
         <HeroSection />
         <AboutMyself />
