@@ -21,7 +21,9 @@ const TechStack = () => {
 
   return (
     <div className="p-4 lg:p-0 mt-4 lg:mt-16 w-[100%] lg:w-[70%]">
-      <h3 className="text-white text-3xl w-[100%] lg:w-[50%]">My Tech Stack</h3>
+      <h3 className="text-white text-3xl w-[100%] lg:w-[50%]">
+        My Tech Stack 🧑‍💻
+      </h3>
       <div className="flex gap-4 mt-4 flex-wrap">
         {skills?.map((skill) => (
           <div

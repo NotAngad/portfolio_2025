@@ -35,6 +35,14 @@ export const metadata: Metadata = {
       "Hi, I’m Angad — a developer who loves crafting beautiful, functional apps using modern web technologies.",
     url: "https://devangad.me",
     siteName: "Angad Srivastav",
+    images: [
+      {
+        url: "https://devangad.me/devangad.png",
+        width: 1200,
+        height: 630,
+        alt: "Angad Srivastav | Software Engineer",
+      },
+    ],
     type: "website",
   },
   metadataBase: new URL("https://devangad.me"),
