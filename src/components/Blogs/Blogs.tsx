@@ -4,11 +4,11 @@ import React from "react";
 const Blogs = () => {
   const blogs = [
     {
-      url: "https://notangad.medium.com/react-google-login-and-node-js-implementation-32002d8d8d78",
+      url: "https://devangad.medium.com/react-google-login-and-node-js-implementation-32002d8d8d78",
       title: "React Google Login and Node.js implementation",
     },
     {
-      url: "https://notangad.medium.com/qr-code-implementation-in-react-js-in-5-mins-82aebd994cad",
+      url: "https://devangad.medium.com/qr-code-implementation-in-react-js-in-5-mins-82aebd994cad",
       title: "QR Code Implementation in React.js in 5 mins.",
     },
   ];

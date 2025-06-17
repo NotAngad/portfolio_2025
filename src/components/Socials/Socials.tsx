@@ -6,7 +6,7 @@ const Socials = () => {
   const socials = [
     { url: "https://www.linkedin.com/in/angad-srivastav/", icon: FaLinkedin },
     { url: "https://github.com/NotAngad", icon: FaGithub },
-    { url: "https://notangad.medium.com/", icon: FaMedium },
+    { url: "https://devangad.medium.com/", icon: FaMedium },
   ];
 
   return (
