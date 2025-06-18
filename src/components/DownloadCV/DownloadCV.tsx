@@ -3,7 +3,7 @@ import Link from "next/link";
 const DownloadCV = () => {
   return (
     <Link
-      href="/Angad_Srivastav_Resume.pdf"
+      href="https://drive.google.com/file/d/1R7WqPVyAjOufn7msMkfT5XVTZnM_b7cF/view"
       download
       target="_blank"
       rel="noopener noreferrer"
