@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="relative z-10">
         <div>
           <p className="text-green-400 text-xl lg:text-3xl">
-            Hi there 👋 , I'm-
+            Hi there 👋 , I&apos;m-
           </p>
           <h1 className="text-white lg:text-7xl text-5xl font-bold ml-2">
             angad

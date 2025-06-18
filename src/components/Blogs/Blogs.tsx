@@ -23,7 +23,12 @@ const Blogs = () => {
       <h3 className="text-white text-3xl">Read my blogs 📗</h3>
       <div className="flex gap-4 lg:gap-8">
         {blogs.map((blog, index) => (
-          <Link target="_blank" key={index} href={blog.url}>
+          <Link
+            aria-label={blog.title}
+            target="_blank"
+            key={index}
+            href={blog.url}
+          >
             <div className="mt-4">
               <div
                 className={`flex items-center justify-center p-10 h-40 w-40 lg:h-70 lg:w-70 rounded-2xl font-bold text-black ${
