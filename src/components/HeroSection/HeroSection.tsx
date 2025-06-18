@@ -18,10 +18,10 @@ const HeroSection = () => {
           </h1>
         </div>
         <div className="pt-8">
-          <h3 className="text-[#dee2e6] text-xl lg:text-3xl lg:w-[50%] w-[100%]">
+          <h2 className="text-[#dee2e6] text-xl lg:text-3xl lg:w-[50%] w-[100%]">
             <span className="text-white">Software Engineer.</span> I design and
             develop beautiful things
-          </h3>
+          </h2>
         </div>
       </div>
     </div>
