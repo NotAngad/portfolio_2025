@@ -1,18 +1,17 @@
-import Link from "next/link";
+/** Library */
 import React from "react";
 
-const Blogs = () => {
-  const blogs = [
-    {
-      url: "https://devangad.medium.com/react-google-login-and-node-js-implementation-32002d8d8d78",
-      title: "React Google Login and Node.js implementation",
-    },
-    {
-      url: "https://devangad.medium.com/qr-code-implementation-in-react-js-in-5-mins-82aebd994cad",
-      title: "QR Code Implementation in React.js in 5 mins.",
-    },
-  ];
+/**  Component */
+import Link from "next/link";
 
+/** Utility */
+import { Blog } from "@/types/Blogs";
+
+export interface IBlogs {
+  blogs: Blog[];
+}
+
+const Blogs: React.FC<IBlogs> = ({ blogs }) => {
   const colorsStyle = {
     even: `bg-gradient-to-l from-[#B3DFF9] via-[#C9C9E0] to-[#EFCDFD]`,
     odd: `bg-gradient-to-t from-[#ffd66e] via-[#FFFCB5] to-[#FFF1AD]`,
