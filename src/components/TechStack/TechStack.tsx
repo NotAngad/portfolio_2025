@@ -22,7 +22,7 @@ const TechStack: React.FC<ITechStack> = ({ cmsData }) => {
             key={skill}
             className="pl-4 pr-4 lg:pl-8 lg:pr-8 pt-2 pb-2 bg-[#dee2e6] rounded-xl flex items-center justify-center"
           >
-            <p className="text-base md:text-xl font-semibold text-black">
+            <p className="text-base md:text-xl font-bold md:font-semibold text-black">
               {skill}
             </p>
           </div>

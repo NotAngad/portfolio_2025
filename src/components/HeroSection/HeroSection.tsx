@@ -6,7 +6,6 @@ import GridPattern from "../GridPattern/GridPattern";
 
 /** Utility */
 import { THeroSection } from "@/types/LandingPage";
-import Highlight from "../Highlight/HighLight";
 
 interface IHeroSeection {
   cmsData: THeroSection;
@@ -23,7 +22,7 @@ const HeroSection: React.FC<IHeroSeection> = ({ cmsData }) => {
 
       <div className="relative z-10">
         <div>
-          <p className="text-green-400 text-xl lg:text-2xl font-semibold">
+          <p className="text-green-400 text-xl lg:text-2xl font-bold md:font-semibold">
             {hiText}
           </p>
           <h1 className="text-white lg:text-7xl text-4xl font-bold ml-2">
@@ -31,8 +30,8 @@ const HeroSection: React.FC<IHeroSeection> = ({ cmsData }) => {
           </h1>
         </div>
         <div className="pt-8">
-          <h2 className="text-[#dee2e6] text-2xl lg:text-3xl lg:w-[50%] w-[100%]">
-            <Highlight text={developerInto} highlights={[]} />
+          <h2 className="text-[#dee2e6] text-xl lg:text-3xl lg:w-[50%] w-[100%]">
+            {developerInto}
           </h2>
         </div>
       </div>

@@ -36,7 +36,7 @@ const Blogs: React.FC<IBlogs> = ({ cmsData }) => {
                   colorsStyle[index % 2 === 0 ? "even" : "odd"]
                 }`}
               >
-                <h3 className="text-base font-semibold md:text-xl">
+                <h3 className="text-base font-bold md:font-semibold md:text-xl">
                   {blog.title}
                 </h3>
               </div>
