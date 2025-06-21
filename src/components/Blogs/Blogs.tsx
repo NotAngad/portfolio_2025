@@ -20,8 +20,8 @@ const Blogs: React.FC<IBlogs> = ({ cmsData }) => {
   };
 
   return (
-    <div className="mt-4 lg:mt-16 p-4 lg:p-0">
-      <h3 className="text-white text-3xl">{title}</h3>
+    <div>
+      <h3 className="text-white text-2xl font-bold md:text-3xl">{title}</h3>
       <div className="flex gap-4 lg:gap-8">
         {blogs.map((blog, index) => (
           <Link
@@ -32,11 +32,13 @@ const Blogs: React.FC<IBlogs> = ({ cmsData }) => {
           >
             <div className="mt-4">
               <div
-                className={`flex items-center justify-center p-10 h-40 w-40 lg:h-70 lg:w-70 rounded-2xl font-bold text-black ${
+                className={`flex pt-[15%] pb-[15%] md:pt-[30%] md:pb-[30%] pl-4 pr-4 h-40 w-40 md:h-60 md:w-60 rounded-2xl font-bold text-black ${
                   colorsStyle[index % 2 === 0 ? "even" : "odd"]
                 }`}
               >
-                <h3 className="text-sm lg:text-lg">{blog.title}</h3>
+                <h3 className="text-base font-semibold md:text-xl">
+                  {blog.title}
+                </h3>
               </div>
             </div>
           </Link>

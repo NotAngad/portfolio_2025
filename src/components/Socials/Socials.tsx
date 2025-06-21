@@ -16,9 +16,9 @@ const Socials: React.FC<ISocials> = ({ cmsData }) => {
   const { introText, socialLinks, title } = cmsData || {};
 
   return (
-    <div className="lg:mt-16 mt-4 p-4 lg:p-0">
-      <h3 className="text-white text-3xl">{title}</h3>
-      <div className="mt-4 w-[100%] lg:w-[70%]">
+    <div>
+      <h3 className="text-white text-2xl font-bold md:text-3xl">{title}</h3>
+      <div className="mt-4 md:text-xl w-[100%] lg:w-[70%] text-base">
         {introText}
         <div className="flex gap-4 mt-6">
           {socialLinks.map(({ icon, url, text }, index) => {

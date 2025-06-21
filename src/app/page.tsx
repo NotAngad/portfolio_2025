@@ -74,8 +74,8 @@ export default async function Home() {
   const allData = await client.fetch<cmsData>(query, {}, options);
 
   return (
-    <div className="pt-4 pb-4 md:pt-12 md:pb-12 bg-[#000814] font-mono">
-      <div className="container mx-auto">
+    <div className="bg-[#000814] font-mono">
+      <div className="container mx-auto flex flex-col gap-8 px-4 py-4 sm:px-8 sm:py-8 mt-4">
         <DownloadCV />
         <HeroSection cmsData={allData?.heroSection} />
         <AboutMyself cmsData={allData?.about} />

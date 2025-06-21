@@ -1,17 +1,12 @@
-"use client";
-
-import useIsMobile from "@/hooks/useIsMobile";
+/** Library */
 import React from "react";
 
 const GridPattern = () => {
-  const isMobile = useIsMobile();
-
   return (
     <svg
       version="1.0"
+      className="w-[100px] h-[100px] md:h-[200px] md:w-[120px]"
       xmlns="http://www.w3.org/2000/svg"
-      width={isMobile ? "100px" : "100px"}
-      height={isMobile ? "70px" : "100px"}
       viewBox="0 0 1280.000000 1280.000000"
       preserveAspectRatio="xMidYMid meet"
     >
