@@ -1,7 +1,12 @@
-import { TFindMeOnline } from "@/types/LandingPage";
-import Link from "next/link";
+/** Library */
 import React from "react";
+
+/** Components */
+import Link from "next/link";
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
+
+/** Utility */
+import { TFindMeOnline } from "@/types/LandingPage";
 
 interface ISocials {
   cmsData: TFindMeOnline;

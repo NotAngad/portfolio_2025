@@ -1,5 +1,3 @@
-import { IconType } from "react-icons";
-
 export type THeroSection = {
   developerInto: string;
   developerName: string;

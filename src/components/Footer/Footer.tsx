@@ -1,5 +1,8 @@
-import { TFooterText } from "@/types/LandingPage";
+/** Library */
 import React from "react";
+
+/** Utility */
+import { TFooterText } from "@/types/LandingPage";
 
 interface IFooter {
   cmsData: TFooterText;

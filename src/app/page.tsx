@@ -12,14 +12,13 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import AboutMyself from "@/components/AboutMyself/AboutMyself";
 
 /** Utility */
-import { Blog } from "@/types/Blogs";
 import {
   TAbout,
   TBlogList,
-  TFindMeOnline,
+  TTechStack,
   TFooterText,
   THeroSection,
-  TTechStack,
+  TFindMeOnline,
 } from "@/types/LandingPage";
 
 const options = { next: { revalidate: 30 } };

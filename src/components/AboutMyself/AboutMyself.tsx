@@ -1,5 +1,8 @@
-import { TAbout } from "@/types/LandingPage";
+/** Library */
 import React from "react";
+
+/** Utility */
+import { TAbout } from "@/types/LandingPage";
 
 interface IAboutMyself {
   cmsData: TAbout;

@@ -1,5 +1,10 @@
+/** Library */
 import React from "react";
+
+/** Component */
 import GridPattern from "../GridPattern/GridPattern";
+
+/** Utility */
 import { THeroSection } from "@/types/LandingPage";
 
 interface IHeroSeection {

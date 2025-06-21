@@ -1,5 +1,8 @@
-import { TTechStack } from "@/types/LandingPage";
+/** Library */
 import React from "react";
+
+/** Utility */
+import { TTechStack } from "@/types/LandingPage";
 
 interface ITechStack {
   cmsData: TTechStack;
