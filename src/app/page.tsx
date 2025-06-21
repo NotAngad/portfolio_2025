@@ -13,26 +13,77 @@ import AboutMyself from "@/components/AboutMyself/AboutMyself";
 
 /** Utility */
 import { Blog } from "@/types/Blogs";
+import {
+  TAbout,
+  TBlogList,
+  TFindMeOnline,
+  TFooterText,
+  THeroSection,
+  TTechStack,
+} from "@/types/LandingPage";
 
 const options = { next: { revalidate: 30 } };
-const BLOGS_QUERY = `*[_type == "blogs"][0].blogList[]{
-  title,
-  url
-}`;
+
+const query = `
+  *[_type == "landingPage"][0]{
+    heroSection {
+      hiText,
+      developerName,
+      developerInto
+    },
+    about {
+      title,
+      description,
+      highlightText
+    },
+    techStack {
+      title,
+      skills[]{
+        skill
+      }
+    },
+    blogList {
+      title,
+      blogs[]{
+        title,
+        url
+      }
+    },
+    findMeOnline {
+      title,
+      introText,
+      socialLinks[]{
+        text,
+        icon,
+        url
+      }
+    },
+    footerText
+  }
+`;
+
+type cmsData = {
+  heroSection: THeroSection;
+  about: TAbout;
+  techStack: TTechStack;
+  blogList: TBlogList;
+  findMeOnline: TFindMeOnline;
+  footerText: TFooterText;
+};
 
 export default async function Home() {
-  const blogs = await client.fetch<Blog[]>(BLOGS_QUERY, {}, options);
+  const allData = await client.fetch<cmsData>(query, {}, options);
 
   return (
     <div className="pt-4 pb-4 md:pt-12 md:pb-12 bg-[#000814] font-mono">
       <div className="container mx-auto">
         <DownloadCV />
-        <HeroSection />
-        <AboutMyself />
-        <TechStack />
-        <Blogs blogs={blogs} />
-        <Socials />
-        <Footer />
+        <HeroSection cmsData={allData?.heroSection} />
+        <AboutMyself cmsData={allData?.about} />
+        <TechStack cmsData={allData?.techStack} />
+        <Blogs cmsData={allData?.blogList} />
+        <Socials cmsData={allData?.findMeOnline} />
+        <Footer cmsData={allData?.footerText} />
       </div>
     </div>
   );

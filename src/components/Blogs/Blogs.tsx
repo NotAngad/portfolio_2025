@@ -5,13 +5,15 @@ import React from "react";
 import Link from "next/link";
 
 /** Utility */
-import { Blog } from "@/types/Blogs";
+import { TBlogList } from "@/types/LandingPage";
 
 export interface IBlogs {
-  blogs: Blog[];
+  cmsData: TBlogList;
 }
 
-const Blogs: React.FC<IBlogs> = ({ blogs }) => {
+const Blogs: React.FC<IBlogs> = ({ cmsData }) => {
+  const { blogs, title } = cmsData || {};
+
   const colorsStyle = {
     even: `bg-gradient-to-l from-[#B3DFF9] via-[#C9C9E0] to-[#EFCDFD]`,
     odd: `bg-gradient-to-t from-[#ffd66e] via-[#FFFCB5] to-[#FFF1AD]`,
@@ -19,7 +21,7 @@ const Blogs: React.FC<IBlogs> = ({ blogs }) => {
 
   return (
     <div className="mt-4 lg:mt-16 p-4 lg:p-0">
-      <h3 className="text-white text-3xl">Read my blogs 📗</h3>
+      <h3 className="text-white text-3xl">{title}</h3>
       <div className="flex gap-4 lg:gap-8">
         {blogs.map((blog, index) => (
           <Link

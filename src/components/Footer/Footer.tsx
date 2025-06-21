@@ -1,9 +1,16 @@
+import { TFooterText } from "@/types/LandingPage";
 import React from "react";
 
-const Footer = () => {
+interface IFooter {
+  cmsData: TFooterText;
+}
+
+const Footer: React.FC<IFooter> = ({ cmsData }) => {
+  const footerText = cmsData;
+
   return (
     <div className="mt-4 lg:mt-16 p-4 lg:p-0 flex items-center justify-center">
-      Made with 💚 by Angad Srivastav
+      {footerText}
     </div>
   );
 };
