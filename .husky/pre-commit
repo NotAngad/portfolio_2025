@@ -1,6 +1,5 @@
-. "$(dirname "$0")/_/husky.sh"
+npm run generate-sitemap
+
+git add public/sitemap.xml public/robots.txt
 
 npm run build
-
-# Auto-stage sitemap changes so they don't get left out
-git add public/sitemap.xml public/robots.txt
